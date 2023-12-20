@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --green:rgb(0, 199, 152);
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(45, 221, 189); */
+    background-image: linear-gradient(to top right, rgb(35, 180, 158),rgb(112, 112, 215));
+}
+
+.login-form{
+    max-width: 450px;
+    width: 80vw;
+    /* border: 1px solid #000; */
+    background-color: #fff;
+    box-shadow: 0 0 2px #fff;
+
+    border-radius: 10px;
+    position: relative;
+}
+
+.hd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    height: 70px;
+    /* min-width: 400px; */
+    background-color: var(--green);
+}
+
+.hd-line{
+    font-size: 1.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 10px;
+
+}
+
+.input-txt{
+    font-size: 2em;
+    margin:20px 30px auto;
+    gap: 0.5em;
+
+    display: flex;
+    align-items: center;
+    
+    border:1px solid gray;
+    
+    border-radius: 5px;
+    /* min-width: 350px; */
+}
+
+#email, #password{
+    height: 40px;
+    font-size: 1.3rem;
+}
+
+input{
+    border: none;
+    width: 100%;
+}
+
+#email, #password:focus{
+    outline: none;
+}
+
+#icon{
+    
+    padding: 6px;
+    color: white;
+    background-color:var(--green);
+    
+}
+
+.link{
+    font-size: 1.3rem;
+    margin: 15px 30px auto;
+    color: var(--green);
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.links{
+    text-decoration: none;
+    color:inherit;
+    font-weight: 500;
+}
+
+button{
+    font-size: 1.7rem;
+    border: none;
+    margin: 25px 25px;
+    padding: 10px ;
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--green);
+
+    border-radius: 5px;
+}
+
+.ft-txt{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    margin:0 30px auto;
+    margin-bottom: 20px;
+}
+
+.ft-link{
+    color: var(--green);
+}
